@@ -1,0 +1,6 @@
+@mixin titles($fontSize){
+    font-family: Parisienne-Regular;
+    font-size: $fontSize;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}

@@ -1,0 +1,40 @@
+@media (max-width: 720px) {
+    
+    .header__banner{
+        height: 160px;
+    }
+
+    .header__banner--title {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    .main__cover--carouselImage {
+        width: 300px;
+    }
+
+    .main__homeParagraph {
+        font-size: 1.3rem;
+        padding: 6px;
+    }
+
+    .footer__list--icons {
+        width: 20px;
+        padding: 1px;
+    }
+
+}
+
+@media (min-width: 1450px){
+    .header__banner {
+        background-repeat: no-repeat;
+        width: 1450px;
+        margin-left: -1450px;
+        left: 100%;
+
+        .header__banner--title {
+            position: relative;
+        }
+    }
+
+}

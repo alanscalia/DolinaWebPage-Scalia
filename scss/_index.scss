@@ -1,0 +1,59 @@
+main {
+    .main__musicPlayer--controls {
+        width: 100%;
+        height: 20px;
+    }
+
+    .main__cover {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-top: 30px;
+        margin-bottom: 50px;
+        animation-name: slideCover;
+        animation-duration: 1s;
+    }
+    @keyframes slideCover {
+        0%{
+            position: relative;
+            right: 100%;
+        }    
+        100%{
+            position:relative;
+            right:0%;
+        }
+    }
+
+    .main__cover--carouselImage {
+        border: 5px solid;
+        margin: 20px;
+        border-color: rgb(61, 32, 12);
+        animation-name: fadeCoverImage;
+        animation-duration: 2s;
+    }
+
+    @keyframes fadeCoverImage {
+        0% {
+            opacity: 50%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    .main__homeParagraph {
+        justify-self: center;
+        align-self: center;
+        font-size: $titleSize - 1rem;
+        width: 600px;
+        font-family: 'Cormorant Garamond', serif;
+        font-style: italic;
+        color: white;
+    }
+
+    .main__homeParagraph--quoteSource {
+        text-align: right;
+        font-size: 1.3rem;
+    }
+}

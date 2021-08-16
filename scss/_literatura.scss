@@ -1,0 +1,30 @@
+.literature {
+    .literature__container {
+        display:flex;
+        flex-wrap: wrap;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 30px;
+        margin: 40px 0;
+        position: relative;
+    }
+    
+    .rowReverse {
+        flex-direction: row-reverse;
+    }
+    
+    .literature__container--bookImg {
+        width:20%;
+    }
+    
+    .literature__container--bookImg img {
+        width: 150px;
+        height:238px;
+        margin-left: 50px;
+    }
+    
+    .literature__container--bookDesc{
+        color: white;
+        text-shadow: 5px 5px 10px black;
+        width: 70%;
+    }
+}

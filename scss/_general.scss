@@ -1,0 +1,15 @@
+// Fuente Parisienne, utilizada en los titulos
+@font-face {
+    font-family: "Parisienne-Regular";
+    src: url(../fonts/Parisienne/Parisienne-Regular.ttf);
+}
+////////////////////////
+
+// Subtitulos de todas las paginas
+.subtitlePages{
+    @include titles($titleSize - 0.5rem);
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+////////////////////////

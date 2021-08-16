@@ -5,10 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sitio dedicado a homenajear al artista y filosofo Alejandro Dolina">
+  <meta name="description" content="Pagina de contacto del autor del sitio">
   <meta name="keywords" 
-  content="Alejandro Dolina, tango, musica, radio, teatro, arte, filosofia, dolina, venganza, la venganza sera terrible">
-  <meta name="google-site-verification" content="-pBiQpU4z8YVLUQ4A6LDJ83AJlWQKJMZLuH6blmRIxg" />
+  content="homenaje, contacto, autor, email, dolina">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -21,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap"
     rel="stylesheet">
-  <title>Alejandro Dolina - Un anti-homenaje</title>
+  <title>Alejandro Dolina - Contactate con el desafortunado autor</title>
 </head>
 
 <body>
@@ -37,7 +36,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="biografia.html">Biografia</a>
@@ -56,7 +55,7 @@
                 <a class="nav-link" href="programa.html">Programa</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link active" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -70,58 +69,64 @@
     </div>
   </header>
 
-    <main class="main">
-      <div class="main__musicPlayer">
-        <audio class="main__musicPlayer--controls" controls autoplay>
-          <source src="/media/ambient_music.mp3" type="audio/mp3">
-        </audio>
-      </div>
+    </div>
+    <h2 class="subtitlePages">Contactenos</h2>
+    <form id="contactForm" action="#" method="GET">
 
-      <div class="main__cover">
-        <div>
-          <!--Imagen o conjunto de imagenes de presentacion-->
-          <div id="carouselExampleFade" class="carousel carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="media/retrato_01.png" class="main__cover--carouselImage d-block w-80" alt="retrato_de_dolina">
-              </div>
-              <div class="carousel-item">
-                <img src="media/retrato_02.png" class="main__cover--carouselImage d-block w-80" alt="retrato_de_dolina">
-              </div>
-              <div class="carousel-item">
-                <img src="media/retrato_03.png" class="main__cover--carouselImage d-block w-80" alt="retrato_de_dolina">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        <label for="nameBox">Nombre/s*: </label>
+        <input type="text" name="nameBox" required>
 
-        </div>
+        <br><br>
 
-        <div class="main__homeParagraph">
-          <p>Salzman examinó su mano y vio centenares de figuras lejanamente parecidas a los arcanos del
-            Tarot: la
-            Riqueza, el Poder, la Fama, el Amor, la Inteligencia, la Fuerza, el Honor, la Juventud, la
-            Razón, la
-            Salud, la Imaginación, el Arte, la Clarividencia, el Valor, la Fe, la Suerte, la Belleza, la
-            Virilidad, la Inspiración… Sin hacer ningún gesto, dio vuelta las cartas sobre la mesa.</p>
-          <p>—Buen juego —dijo el Tallador—, pero no alcanza.</p>
-          <p>Y jugó el naipe de la Muerte.</p>
-          <p class="main__homeParagraph--quoteSource">-"Cartas Marcadas", Alejandro Dolina.</p>
-        </div>
-      </div>
+        <label for="lastNameBox">Apellido*: </label>
+        <input type="text" name="lastNameBox" required>
 
-    </main>
-  </div>
+        <br><br>
 
+        <label for="birthBox" required>Fecha de nacimiento*: </label>
+        <input type="date" name="birthBox" id="birthBox">
+
+        <br><br>
+
+        <label for="countryBox">Lugar*: </label>
+        <select name="pais" id="pais" required>
+            <option selected value="0">- - -</option>
+            <option value="arg">Argentina</option>
+            <option value="uru">Uruguay</option>
+            <option value="par">Paraguay</option>
+            <option value="chi">Chile</option>
+            <option value="esp">España</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <br><br>
+
+        <label for="email" required>Email*: </label>
+        <input type="email" name="emailBox" id="emailBox" placeholder="ejemplo@ejemplo.com">
+
+        <br><br>
+
+        <label for="questionsBox">Incluye tus comentarios/consultas aqui: </label>
+
+        <br>
+
+        <textarea name="questionsBox" id="questionsBox" cols="30" rows="10"></textarea>
+
+        <br>
+
+        <p>* Campos obligatorios.</p>
+
+        <br>
+
+        <input type="checkbox" name="newsletter">
+        <label for="newsletter">Quiero recibir el boletin mensual por correo electronico.</label>
+
+        <br><br>
+
+        <input type="reset" name="buttonReset" id="buttonReset" value="Borrar">
+        <input type="submit" name="buttonSub" id="buttonSub" value="Enviar">
+
+    </form>
   <footer class="footer">
     <!--Datos del autor-->
     <p class="footer__author">&#169 <a class="footer__author--links"  href="https://www.linkedin.com/in/alan-scalia/" target="_blank">Alan Scalia

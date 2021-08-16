@@ -1,0 +1,41 @@
+.footer {
+    background-color: #212529;
+    border: 1px solid black;
+    color: white;
+
+    .footer__author--links, .footer__list--links {
+        color: rgba(255,255,255,.75);
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+
+    .footer__list {
+        position: fixed;
+        padding: 10px;
+        bottom: 200px;
+        right: 0;
+        background-color: #212529;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .footer__list--items {
+        display: block;
+        z-index: 100;
+    }
+
+    .footer__list--icons {
+        width: 30px;
+        padding: 2px;
+    }
+
+    .footer__list--icons:hover {
+        width: 35px;
+    }
+
+
+    a:hover {
+        color: white;
+    }
+
+}

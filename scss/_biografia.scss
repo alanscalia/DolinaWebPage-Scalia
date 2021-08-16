@@ -1,0 +1,11 @@
+.biography {
+    .biography__title {
+        @include titles($titleSize - .5rem);
+        color: black;
+        padding-left: 20px;
+    }
+
+    .biography__paragraph {
+        font-size: 15px;
+    }
+}

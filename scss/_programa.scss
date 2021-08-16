@@ -1,0 +1,22 @@
+.showMain {
+    .showMain__section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2em;
+        justify-content: left;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .showMain__section--video {
+        border: 10px rgb(61, 32, 12) ridge;
+        background-image: linear-gradient(to right, sandybrown, rgb(88, 58, 36));
+    }
+
+    .showMain__section--description {
+        color:white;
+        display: inline-block;
+        width: 600px;
+        padding: 40px;
+    }
+
+}

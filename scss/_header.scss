@@ -1,0 +1,42 @@
+body {
+    background-image: url("../media/fondo.jpg");
+    background-repeat: repeat;
+    margin: 0px;
+    padding: 0px;
+
+    header {
+        background-color: #0a0701;
+    }
+
+    .header__banner {
+        background-image: url("../media/header.jpg");
+        position: relative;
+        height: 250px;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        border-bottom: 2px solid black;
+    }
+    
+    .header__banner--title {
+        @include titles($titleSize);
+        padding: 50px;
+        margin-top: 30px;
+        animation-name: titleAnimation;
+        animation-duration: 2s;
+    }
+
+    @keyframes titleAnimation {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 100%
+        }
+    }
+
+    .header__navBar {
+        width: 100%;
+    }
+}
