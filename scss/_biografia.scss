@@ -1,11 +1,20 @@
 .biography {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+
     .biography__title {
         @include titles($titleSize - .5rem);
-        color: black;
-        padding-left: 20px;
+        color: white;
+        padding: 20px;
     }
 
     .biography__paragraph {
         font-size: 15px;
+        color: rgb(226, 226, 226);
+        text-shadow: 5px 5px 8px black;
+        padding: 15px 0px 25px 0px;
+
     }
 }

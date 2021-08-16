@@ -28,7 +28,7 @@ main {
     .main__cover--carouselImage {
         border: 5px solid;
         margin: 20px;
-        border-color: rgb(61, 32, 12);
+        border-color: $greyNav;
         animation-name: fadeCoverImage;
         animation-duration: 2s;
     }

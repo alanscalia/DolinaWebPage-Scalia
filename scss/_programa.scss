@@ -8,8 +8,8 @@
     }
 
     .showMain__section--video {
-        border: 10px rgb(61, 32, 12) ridge;
-        background-image: linear-gradient(to right, sandybrown, rgb(88, 58, 36));
+        border: 10px $greyNav ridge;
+        background-image: linear-gradient(to right, $greyNav, rgb(102, 102, 102));
     }
 
     .showMain__section--description {

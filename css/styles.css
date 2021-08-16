@@ -22,16 +22,23 @@
     .header__banner .header__banner--title {
       position: relative; } }
 
-.biography .biography__title {
-  font-family: Parisienne-Regular;
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 1px 1px 3px black;
-  color: black;
-  padding-left: 20px; }
-
-.biography .biography__paragraph {
-  font-size: 15px; }
+.biography {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 50px; }
+  .biography .biography__title {
+    font-family: Parisienne-Regular;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    color: white;
+    padding: 20px; }
+  .biography .biography__paragraph {
+    font-size: 15px;
+    color: #e2e2e2;
+    text-shadow: 5px 5px 8px black;
+    padding: 15px 0px 25px 0px; }
 
 .footer {
   background-color: #212529;
@@ -118,7 +125,7 @@ main .main__cover {
 main .main__cover--carouselImage {
   border: 5px solid;
   margin: 20px;
-  border-color: #3d200c;
+  border-color: #212529;
   animation-name: fadeCoverImage;
   animation-duration: 2s; }
 
@@ -149,21 +156,39 @@ main .main__homeParagraph--quoteSource {
   margin: 40px 0;
   position: relative; }
 
-.literature .rowReverse {
-  flex-direction: row-reverse; }
-
 .literature .literature__container--bookImg {
   width: 20%; }
-
-.literature .literature__container--bookImg img {
-  width: 150px;
-  height: 238px;
-  margin-left: 50px; }
+  .literature .literature__container--bookImg img {
+    width: 150px;
+    height: 238px;
+    margin-left: 50px; }
 
 .literature .literature__container--bookDesc {
   color: white;
   text-shadow: 5px 5px 10px black;
   width: 70%; }
+  .literature .literature__container--bookDesc .literature__container__bookDesc--info {
+    font-size: 1.3em;
+    background-color: #212529;
+    border-radius: 5px;
+    color: darkgrey;
+    border: 2px solid darkgray;
+    text-decoration: none;
+    padding: 0px 5px;
+    text-shadow: 0px 0px 0px;
+    position: absolute;
+    top: 80%;
+    left: 80%; }
+  .literature .literature__container--bookDesc .literature__container__bookDesc--info:hover {
+    border: 2px solid #212529;
+    background-color: darkgray;
+    color: #212529; }
+
+.literature .rowReverse {
+  flex-direction: row-reverse; }
+  .literature .rowReverse .literature__container__bookDesc--info {
+    position: absolute;
+    left: 12%; }
 
 .showMain .showMain__section {
   display: flex;
@@ -173,8 +198,8 @@ main .main__homeParagraph--quoteSource {
   background-color: rgba(0, 0, 0, 0.6); }
 
 .showMain .showMain__section--video {
-  border: 10px #3d200c ridge;
-  background-image: linear-gradient(to right, sandybrown, #583a24); }
+  border: 10px #212529 ridge;
+  background-image: linear-gradient(to right, #212529, #666666); }
 
 .showMain .showMain__section--description {
   color: white;

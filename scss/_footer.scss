@@ -1,5 +1,5 @@
 .footer {
-    background-color: #212529;
+    background-color: $greyNav;
     border: 1px solid black;
     color: white;
 
@@ -14,7 +14,7 @@
         padding: 10px;
         bottom: 200px;
         right: 0;
-        background-color: #212529;
+        background-color: $greyNav;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
     }
