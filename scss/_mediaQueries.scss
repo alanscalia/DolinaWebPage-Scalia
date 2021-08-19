@@ -35,6 +35,15 @@
 
 }
 
+@media (max-width: 350px) {
+    h1 {
+        padding: 0px;
+    }
+    .main__cover--carouselImage {
+        width: 150px;
+    }
+}
+
 @media (min-width: 1450px){
     .header__banner {
         background-repeat: no-repeat;
