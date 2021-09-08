@@ -14,6 +14,7 @@ main {
         animation-name: slideCover;
         animation-duration: 1s;
     }
+    
     @keyframes slideCover {
         0%{
             position: relative;
@@ -45,7 +46,6 @@ main {
     .main__homeParagraph {
         justify-self: center;
         align-self: center;
-        font-size: $titleSize - 1rem;
         width: 600px;
         font-family: 'Cormorant Garamond', serif;
         font-style: italic;

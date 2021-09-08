@@ -10,6 +10,7 @@
     @include titles($titleSize - 0.5rem);
     text-align: center;
     padding: 20px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(63, 48, 0, 0.4));
+    border-bottom: 2px solid black;
 }
 ////////////////////////

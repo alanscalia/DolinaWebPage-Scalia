@@ -1,5 +1,5 @@
 body {
-    background-image: url("../media/fondo.jpg");
+    background-image: url("../media/fondo.png");
     background-repeat: repeat;
     margin: 0px;
     padding: 0px;
@@ -13,17 +13,32 @@ body {
         position: relative;
         height: 250px;
         display: flex;
+        align-items: center;
         align-self: center;
         justify-self: center;
         border-bottom: 2px solid black;
     }
     
-    .header__banner--title {
-        @include titles($titleSize);
-        padding: 50px;
-        margin-top: 30px;
+
+   
+
+    .header__navBar {
+        width: 100%;
+    }
+
+    .title {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+
+        .title--h1 {
         animation-name: titleAnimation;
         animation-duration: 2s;
+        position: absolute;
+        top: 160px;
+        left: 5%;
+        
     }
 
     @keyframes titleAnimation {
@@ -35,8 +50,7 @@ body {
             opacity: 100%
         }
     }
-
-    .header__navBar {
-        width: 100%;
     }
+
+    
 }

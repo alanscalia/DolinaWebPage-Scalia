@@ -1,9 +1,26 @@
+@media (max-width: 4000px) {
+    .title--h1  {
+        @include titles($titleSize);
+    }
+    .main__homeParagraph {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1450px) {
+    .header__banner {
+        background-repeat: no-repeat;
+        width: 1450px;
+        margin-left: -1450px;
+        left: 100%;
+    }
+}
+
 @media (max-width: 1224px) {
     .literature {
         .literature__container {
             display:flex;
             align-items: center;
-            justify-content: center;
             flex-direction: column !important; 
         }
         
@@ -12,6 +29,7 @@
         .literature__container--bookImg {   
             img {
                 margin-bottom: 50px;
+                left: 0px;
             }
         }
     
@@ -24,17 +42,14 @@
     
         .literature__container--info {
             position: absolute;
-            left:0;
-            right: 0;
-            bottom: 50px;
+            width: 120px;
+            left:42.5vw;
+            top: 300px;
         }
     
         .rowReverse {
             flex-direction: column;
-    
-            .literature__container--info{
-                left: 0;
-            }
+
         }
     }
 }
@@ -45,7 +60,7 @@
         height: 160px;
     }
 
-    .header__banner--title {
+    .title--h1 {
         margin: 0;
         font-size: 2.5rem;
     }
@@ -64,27 +79,30 @@
         padding: 1px;
     }
 
+    .literature__container--bookImg {   
+        img {
+            margin-bottom: 50px;
+            left: -50px;
+        }
+    }
+
 }
 
 @media (max-width: 350px) {
-    h1 {
-        padding: 0px;
+    .title--h1 {
+        font-size: 2rem;
     }
 
     .main__cover--carouselImage {
         width: 150px;
     }
-}
-
-@media (min-width: 1450px) {
-    .header__banner {
-        background-repeat: no-repeat;
-        width: 1450px;
-        margin-left: -1450px;
-        left: 100%;
-
-        .header__banner--title {
-            position: relative;
-        }
+    .main__homeParagraph {
+        font-size: 1.4rem;
     }
+
+    .showMain__section--video {
+        width: 150px;
+    }
+
 }
+

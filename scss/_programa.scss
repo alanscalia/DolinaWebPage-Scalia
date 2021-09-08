@@ -3,13 +3,17 @@
         display: flex;
         flex-wrap: wrap;
         padding: 2em;
-        justify-content: left;
+        justify-content: center;
         background-color: rgba(0, 0, 0, 0.6);
     }
 
     .showMain__section--video {
         border: 10px $greyNav ridge;
         background-image: linear-gradient(to right, $greyNav, rgb(102, 102, 102));
+    }
+
+    .showMain__section--descTitle {
+        font-size: 1.4em;
     }
 
     .showMain__section--description {

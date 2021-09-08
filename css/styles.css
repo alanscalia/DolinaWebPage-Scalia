@@ -1,71 +1,32 @@
-@media (max-width: 1224px) {
-  .literature .literature__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column !important; }
-  .literature .literature__container--bookImg img {
-    margin-bottom: 50px; }
-  .literature .literature__container--bookDesc {
-    text-align: justify;
-    margin-top: 50px; }
-  .literature .literature__container--info {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 50px; }
-  .literature .rowReverse {
-    flex-direction: column; }
-    .literature .rowReverse .literature__container--info {
-      left: 0; } }
-
-@media (max-width: 720px) {
-  .header__banner {
-    height: 160px; }
-  .header__banner--title {
-    margin: 0;
-    font-size: 2.5rem; }
-  .main__cover--carouselImage {
-    width: 300px; }
-  .main__homeParagraph {
-    font-size: 1.3rem;
-    padding: 6px; }
-  .footer__list--icons {
-    width: 20px;
-    padding: 1px; } }
-
-@media (max-width: 350px) {
-  h1 {
-    padding: 0px; }
-  .main__cover--carouselImage {
-    width: 150px; } }
-
-@media (min-width: 1450px) {
-  .header__banner {
-    background-repeat: no-repeat;
-    width: 1450px;
-    margin-left: -1450px;
-    left: 100%; }
-    .header__banner .header__banner--title {
-      position: relative; } }
-
 .biography {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 30px;
-  margin-bottom: 10px;
-  border-radius: 50px; }
+  border-radius: 50px;
+  max-width: 1248px;
+  margin-bottom: 90px; }
   .biography .biography__title {
     font-family: Parisienne-Regular;
     font-size: 2.5rem;
     color: white;
     text-shadow: 1px 1px 3px black;
     color: white;
-    padding: 20px; }
+    padding: 20px;
+    border-bottom: 2px solid white; }
   .biography .biography__paragraph {
     font-size: 15px;
     color: #e2e2e2;
     text-shadow: 5px 5px 8px black;
     padding: 15px 0px 25px 0px; }
+
+.contactus--contentForm {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 50px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  color: white; }
 
 .footer {
   background-color: #212529;
@@ -95,7 +56,7 @@
     color: white; }
 
 body {
-  background-image: url("../media/fondo.jpg");
+  background-image: url("../media/fondo.png");
   background-repeat: repeat;
   margin: 0px;
   padding: 0px; }
@@ -106,26 +67,29 @@ body {
     position: relative;
     height: 250px;
     display: flex;
+    align-items: center;
     align-self: center;
     justify-self: center;
     border-bottom: 2px solid black; }
-  body .header__banner--title {
-    font-family: Parisienne-Regular;
-    font-size: 3rem;
-    color: white;
-    text-shadow: 1px 1px 3px black;
-    padding: 50px;
-    margin-top: 30px;
-    animation-name: titleAnimation;
-    animation-duration: 2s; }
+  body .header__navBar {
+    width: 100%; }
+  body .title {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto; }
+    body .title .title--h1 {
+      animation-name: titleAnimation;
+      animation-duration: 2s;
+      position: absolute;
+      top: 160px;
+      left: 5%; }
 
 @keyframes titleAnimation {
   0% {
     opacity: 0; }
   100% {
     opacity: 100%; } }
-  body .header__navBar {
-    width: 100%; }
 
 main .main__musicPlayer--controls {
   width: 100%;
@@ -165,7 +129,6 @@ main .main__cover--carouselImage {
 main .main__homeParagraph {
   justify-self: center;
   align-self: center;
-  font-size: 2rem;
   width: 600px;
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
@@ -178,8 +141,9 @@ main .main__homeParagraph--quoteSource {
 .literature .literature__container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 30px;
   margin: 40px 0;
   position: relative;
@@ -230,12 +194,15 @@ main .main__homeParagraph--quoteSource {
   display: flex;
   flex-wrap: wrap;
   padding: 2em;
-  justify-content: left;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.6); }
 
 .showMain .showMain__section--video {
   border: 10px #212529 ridge;
   background-image: linear-gradient(to right, #212529, #666666); }
+
+.showMain .showMain__section--descTitle {
+  font-size: 1.4em; }
 
 .showMain .showMain__section--description {
   color: white;
@@ -254,4 +221,68 @@ main .main__homeParagraph--quoteSource {
   text-shadow: 1px 1px 3px black;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); }
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(63, 48, 0, 0.4));
+  border-bottom: 2px solid black; }
+
+@media (max-width: 4000px) {
+  .title--h1 {
+    font-family: Parisienne-Regular;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 3px black; }
+  .main__homeParagraph {
+    font-size: 2rem; } }
+
+@media (min-width: 1450px) {
+  .header__banner {
+    background-repeat: no-repeat;
+    width: 1450px;
+    margin-left: -1450px;
+    left: 100%; } }
+
+@media (max-width: 1224px) {
+  .literature .literature__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column !important; }
+  .literature .literature__container--bookImg img {
+    margin-bottom: 50px;
+    left: 0px; }
+  .literature .literature__container--bookDesc {
+    text-align: justify;
+    margin-top: 50px; }
+  .literature .literature__container--info {
+    position: absolute;
+    width: 120px;
+    left: 42.5vw;
+    top: 300px; }
+  .literature .rowReverse {
+    flex-direction: column; } }
+
+@media (max-width: 720px) {
+  .header__banner {
+    height: 160px; }
+  .title--h1 {
+    margin: 0;
+    font-size: 2.5rem; }
+  .main__cover--carouselImage {
+    width: 300px; }
+  .main__homeParagraph {
+    font-size: 1.3rem;
+    padding: 6px; }
+  .footer__list--icons {
+    width: 20px;
+    padding: 1px; }
+  .literature__container--bookImg img {
+    margin-bottom: 50px;
+    left: -50px; } }
+
+@media (max-width: 350px) {
+  .title--h1 {
+    font-size: 2rem; }
+  .main__cover--carouselImage {
+    width: 150px; }
+  .main__homeParagraph {
+    font-size: 1.4rem; }
+  .showMain__section--video {
+    width: 150px; } }

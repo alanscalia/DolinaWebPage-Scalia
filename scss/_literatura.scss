@@ -2,8 +2,9 @@
     .literature__container {
         display:flex;
         align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.6);
         padding: 30px;
         margin: 40px 0;
         position: relative;
@@ -58,7 +59,7 @@
 
     .rowReverse {
         flex-direction: row-reverse;
-
+        
         .literature__container--info{
             left: 40.8vw;
         }
