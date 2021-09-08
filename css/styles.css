@@ -71,6 +71,9 @@ body {
     align-self: center;
     justify-self: center;
     border-bottom: 2px solid black; }
+  body .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    justify-content: center; }
   body .header__navBar {
     width: 100%; }
   body .title {
